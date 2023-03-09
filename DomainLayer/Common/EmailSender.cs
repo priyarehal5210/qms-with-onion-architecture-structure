@@ -27,6 +27,7 @@ namespace DomainLayer.Common
             try
             {
                 string toEmail = string.IsNullOrEmpty(email) ? _Email.ToEmail : email;
+
                 MailMessage Mail = new MailMessage()
                 {
                     From = new MailAddress(_Email.UsernameEmail, "My Email Name")

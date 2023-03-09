@@ -37,7 +37,7 @@ namespace QmsBackend.Controllers
             {
                await _iunitofwork.assignTasks.AddAsync(assignedtask);
                await _iunitofwork.assignTasks.SaveChangesAsync();
-                return Ok(assignedtask);
+               return Ok(assignedtask);
             }
             return BadRequest();
         }

@@ -2,13 +2,17 @@
 using AutoMapper;
 using DomainLayer.Entities;
 using Infrastucture.Repository.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.WebUtilities;
 using QmsBackend.ViewModels;
 using System.Net.Mail;
+using System.Security.Cryptography;
+using System.Text;
 using System.Text.Encodings.Web;
 
 namespace QmsBackend.Controllers
@@ -53,6 +57,7 @@ namespace QmsBackend.Controllers
             var User = _mapper.Map<RegisteredUserDto, RegisteredUsers>(registeredUserDto);
             var epassword = DomainLayer.Common.EncryptionDecryption.encrypt(User.password);
             var econfirmPassword = DomainLayer.Common.EncryptionDecryption.encrypt(User.confirmPassword);
+
             if (AllUsers.Any(u => u.userName == User.userName))
             {
                 return BadRequest("user in use");
@@ -77,22 +82,41 @@ namespace QmsBackend.Controllers
                     password = epassword,
                     confirmPassword = econfirmPassword,
                 };
+
                 //sending email
 
-                //var callbackUrl = Url.Page("",
-                //  pageHandler: null,
-                //  values: new { area = "Identity", userId = userInDb.Id },
-                //  protocol: Request.Scheme);
-                //await _emailSender.SendEmailAsync(userInDb.email, "Confirm your email",
-                //    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                var emailHash = SHA256.Create().ComputeHash(Encoding.UTF8.GetBytes(userInDb.email));
+                var code = Convert.ToBase64String(emailHash);
+                var confirmationLink = Url.Action("ConfirmEmail", "Registration",
+                    new {userId = userInDb.Id, codeis = code }, protocol:Request.Scheme);
+                await _emailSender.SendEmailAsync(userInDb.email, "Confirm your email",
+                    $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(confirmationLink)}'>clicking here</a>.");
 
-                await _unitofwork.registerUsers.AddAsync(userInDb);
-                await _unitofwork.registerUsers.SaveChangesAsync();
-                return Ok(userInDb);
+                if (userInDb.emailConfirm == true)
+                {
+                    await _unitofwork.registerUsers.AddAsync(userInDb);
+                    await _unitofwork.registerUsers.SaveChangesAsync();
+                    return Ok(userInDb);
+                }
+                else
+                {
+                    return BadRequest("confirm your mail please");
+                }
             }
             return BadRequest();
         }
-
+        //confirmation action
+        [HttpGet("ConfirmEmail")]
+        [AllowAnonymous]
+        public async Task<IActionResult> ConfirmEmail(string token)
+        {
+            var allusers=await _unitofwork.registerUsers.GetAllAsync();
+            //if(allusers.Any(u=>u.Id==userId))
+            //{
+            //    return Ok(userId);
+            //}
+            return BadRequest("no user found");
+        }
         //<summary>
         //login process.
         //</summay>

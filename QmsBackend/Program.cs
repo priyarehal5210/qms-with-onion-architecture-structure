@@ -39,7 +39,7 @@ builder.Services.AddAutoMapper(typeof(ProfileMapping));
 builder.Services.AddPersistence(builder.Configuration);
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEmailSender, EmailSender>();
-
+builder.Services.Configure<Email>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddSwaggerGen();
 //cores
 builder.Services.AddCors(options =>
