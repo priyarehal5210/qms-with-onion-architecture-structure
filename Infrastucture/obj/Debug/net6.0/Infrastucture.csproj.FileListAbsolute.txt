@@ -1,0 +1,17 @@
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\bin\Debug\net6.0\Infrastucture.deps.json
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\bin\Debug\net6.0\Infrastucture.dll
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\bin\Debug\net6.0\Infrastucture.pdb
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\bin\Debug\net6.0\ApplicationLayer.dll
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\bin\Debug\net6.0\DomainLayer.dll
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\bin\Debug\net6.0\ApplicationLayer.pdb
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\bin\Debug\net6.0\DomainLayer.pdb
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\obj\Debug\net6.0\Infrastucture.csproj.AssemblyReference.cache
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\obj\Debug\net6.0\Infrastucture.GeneratedMSBuildEditorConfig.editorconfig
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\obj\Debug\net6.0\Infrastucture.AssemblyInfoInputs.cache
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\obj\Debug\net6.0\Infrastucture.AssemblyInfo.cs
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\obj\Debug\net6.0\Infrastucture.csproj.CoreCompileInputs.cache
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\obj\Debug\net6.0\Infrastucture.csproj.CopyComplete
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\obj\Debug\net6.0\Infrastucture.dll
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\obj\Debug\net6.0\refint\Infrastucture.dll
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\obj\Debug\net6.0\Infrastucture.pdb
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\Infrastucture\obj\Debug\net6.0\ref\Infrastucture.dll

@@ -1,0 +1,15 @@
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\bin\Debug\net6.0\ApplicationLayer.deps.json
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\bin\Debug\net6.0\ApplicationLayer.dll
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\bin\Debug\net6.0\ApplicationLayer.pdb
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\bin\Debug\net6.0\DomainLayer.dll
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\bin\Debug\net6.0\DomainLayer.pdb
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.csproj.AssemblyReference.cache
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.AssemblyInfoInputs.cache
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.AssemblyInfo.cs
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.csproj.CopyComplete
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.dll
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\obj\Debug\net6.0\refint\ApplicationLayer.dll
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.pdb
+D:\Company\Angular\QmsWithOnionArchitecture\Backend\QmsBackend\ApplicationLayer\obj\Debug\net6.0\ref\ApplicationLayer.dll
